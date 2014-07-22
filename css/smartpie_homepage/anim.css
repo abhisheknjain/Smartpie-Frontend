@@ -1,0 +1,124 @@
+.tagline{
+  position: absolute;
+  margin-top: 500px;
+  margin-left: 25%;
+  margin-right: 25%;
+  width: auto;
+}
+.tagline-anim {
+  width: 150px;
+	float: left;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+.tagline-anim h2  {
+		color: #3690E3;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-style: bold;
+		background-color: rgba(227,227,227,0.6);
+		padding: 10px 5px;
+		font-size: 45px;
+    text-align: center;
+    border-radius: 7px;
+    border-color: #3690E3;
+    border-width: 4px;
+}
+
+/*Animation for share */
+@-webkit-keyframes share-anim {
+  0% {opacity: 0;}
+  15% {opacity: 1;}
+  70%{ opacity: 1;}
+  100% {opacity: 0;}
+}
+@-moz-keyframes share-anim {
+  0% {opacity: 0;}
+  15% {opacity: 1;}
+  70%{ opacity: 1;}
+  100% {opacity: 0;}
+}
+@-o-keyframes share-anim {
+  0% {opacity: 0;}
+  15% {opacity: 1;}
+  70%{ opacity: 1;}
+  100% {opacity: 0;}
+}
+@keyframes share-anim {
+  0% {opacity: 0;}
+  15% {opacity: 1;}
+  70%{ opacity: 1;}
+  100% {opacity: 0;}
+}
+/*Animation for learn */
+@-webkit-keyframes learn-anim {
+  0% {opacity: 0;}
+  20% {opacity: 0;}
+  35% {opacity: 1;}
+  70% {opacity: 1;}
+  100% {opacity: 0;}
+}
+@-moz-keyframes learn-anim {
+  0% {opacity: 0;}
+  15% {opacity: 1;}
+  70%{ opacity: 1;}
+  100% {opacity: 0;}
+}
+@-o-keyframes learn-anim {
+  0% {opacity: 0;}
+  15% {opacity: 1;}
+  70%{ opacity: 1;}
+  100% {opacity: 0;}
+}
+@keyframes learn-anim {
+  0% {opacity: 0;}
+  15% {opacity: 1;}
+  70%{ opacity: 1;}
+  100% {opacity: 0;}
+}
+/*Animation for grow */
+@-webkit-keyframes grow-anim {
+  0% {opacity: 0;}
+  40% {opacity: 0;}
+  55% {opacity: 1;}
+  70%{opacity: 1;}
+  100%{opacity: 0}
+}
+@-moz-keyframes grow-anim {
+  0% {opacity: 0;}
+  15% {opacity: 1;}
+  70%{ opacity: 1;}
+  100% {opacity: 0;}}
+@-o-keyframes grow-anim {
+  0% {opacity: 0;}
+  15% {opacity: 1;}
+  70%{ opacity: 1;}
+  100% {opacity: 0;}
+}
+@keyframes grow-anim {
+  0% {opacity: 0;}
+  15% {opacity: 1;}
+  70%{ opacity: 1;}
+  100% {opacity: 0;}
+}
+
+#share{
+	-webkit-animation: share-anim 5s infinite;
+  -moz-animation:    share-anim 5s infinite;
+ 	-o-animation:      share-anim 5s infinite;
+  animation:         share-anim 5s infinite;
+}
+
+#learn{
+	-webkit-animation: learn-anim 5s infinite;
+  -moz-animation:    learn-anim 5s infinite;
+ 	-o-animation:      learn-anim 5s infinite;
+  animation:         learn-anim 5s infinite;
+}
+
+#grow{
+	-webkit-animation: grow-anim 5s infinite;
+  -moz-animation:    grow-anim 5s infinite;
+ 	-o-animation:      grow-anim 5s infinite;
+  animation:         grow-anim 5s infinite;
+}
