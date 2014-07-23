@@ -7,6 +7,33 @@
   100% {top: 2px;}
 
 }
+@-moz-keyframes scrol-anim {
+  0% {top: 0px;}
+  50% {top: 8px;}
+  60% {top: 8px;}
+  70% {top: 6px;}
+  80% {top: 4px;}
+  100% {top: 2px;}
+
+}
+@-o-keyframes scrol-anim {
+  0% {top: 0px;}
+  50% {top: 8px;}
+  60% {top: 8px;}
+  70% {top: 6px;}
+  80% {top: 4px;}
+  100% {top: 2px;}
+
+}
+@keyframes scrol-anim {
+  0% {top: 0px;}
+  50% {top: 8px;}
+  60% {top: 8px;}
+  70% {top: 6px;}
+  80% {top: 4px;}
+  100% {top: 2px;}
+
+}
 
 .scroll-down-icon{
 
@@ -17,102 +44,52 @@
 
 }
 
-
-
-/*Animation for share */
-@-webkit-keyframes share-anim {
-  0% {opacity: 0;}
-  15% {opacity: 1;}
-  70%{ opacity: 1;}
-  100% {opacity: 0;}
-}
-@-moz-keyframes share-anim {
-  0% {opacity: 0;}
-  15% {opacity: 1;}
-  70%{ opacity: 1;}
-  100% {opacity: 0;}
-}
-@-o-keyframes share-anim {
-  0% {opacity: 0;}
-  15% {opacity: 1;}
-  70%{ opacity: 1;}
-  100% {opacity: 0;}
-}
-@keyframes share-anim {
-  0% {opacity: 0;}
-  15% {opacity: 1;}
-  70%{ opacity: 1;}
-  100% {opacity: 0;}
-}
-/*Animation for learn */
-@-webkit-keyframes learn-anim {
-  0% {opacity: 0;}
-  20% {opacity: 0;}
-  35% {opacity: 1;}
-  70% {opacity: 1;}
-  100% {opacity: 0;}
-}
-@-moz-keyframes learn-anim {
-  0% {opacity: 0;}
-  15% {opacity: 1;}
-  70%{ opacity: 1;}
-  100% {opacity: 0;}
-}
-@-o-keyframes learn-anim {
-  0% {opacity: 0;}
-  15% {opacity: 1;}
-  70%{ opacity: 1;}
-  100% {opacity: 0;}
-}
-@keyframes learn-anim {
-  0% {opacity: 0;}
-  15% {opacity: 1;}
-  70%{ opacity: 1;}
-  100% {opacity: 0;}
-}
-/*Animation for grow */
-@-webkit-keyframes grow-anim {
-  0% {opacity: 0;}
-  40% {opacity: 0;}
-  55% {opacity: 1;}
-  70%{opacity: 1;}
-  100%{opacity: 0}
-}
-@-moz-keyframes grow-anim {
-  0% {opacity: 0;}
-  15% {opacity: 1;}
-  70%{ opacity: 1;}
-  100% {opacity: 0;}}
-@-o-keyframes grow-anim {
-  0% {opacity: 0;}
-  15% {opacity: 1;}
-  70%{ opacity: 1;}
-  100% {opacity: 0;}
-}
-@keyframes grow-anim {
-  0% {opacity: 0;}
-  15% {opacity: 1;}
-  70%{ opacity: 1;}
-  100% {opacity: 0;}
+@-webkit-keyframes carousel-quote{
+    0%    { left:0; }
+    11%   { left:0; }
+    12.5% { left:-100%; }
+    23.5% { left:-100%; }
+    25%   { left:-200%; }
+    36%   { left:-200%; }
+    37.5% { left:-300%; }
+    48.5% { left:-300%; }
+    50%   { left:-400%; }
+    61%   { left:-400%; }
+    62.5% { left:-300%; }
+    73.5% { left:-300%; }
+    75%   { left:-200%; }
+    86%   { left:-200%; }
+    87.5% { left:-100%; }
+    98.5% { left:-100%; }
+    100%  { left:0; }
 }
 
-#share{
-	-webkit-animation: share-anim 5s infinite;
-  -moz-animation:    share-anim 5s infinite;
- 	-o-animation:      share-anim 5s infinite;
-  animation:         share-anim 5s infinite;
+.quote-carousel{
+  overflow:hidden;
+  width:100%;
+}
+.quote {
+  font-family: 'Dancing Script', cursive;
+  font-size:250%;
+  font-weight: 700;
+  list-style:none;
+  position:relative;
+  width:500%; /* Number of panes * 100% */
+  overflow:hidden; /* This is used solely to clear floats, it does not add functionality. */        
+
+  -moz-animation:carousel-quote 50s infinite;
+  -webkit-animation:carousel-quote 50s infinite;
+  animation:carousel-quote 50s infinite;
 }
 
-#learn{
-	-webkit-animation: learn-anim 5s infinite;
-  -moz-animation:    learn-anim 5s infinite;
- 	-o-animation:      learn-anim 5s infinite;
-  animation:         learn-anim 5s infinite;
+.quote > li{
+    position:relative;
+    float:left;
+    width:20%; /* 100 / number of panes */
 }
 
-#grow{
-	-webkit-animation: grow-anim 5s infinite;
-  -moz-animation:    grow-anim 5s infinite;
- 	-o-animation:      grow-anim 5s infinite;
-  animation:         grow-anim 5s infinite;
+.carousel span{
+    display:block;
+    width:100%;
+    max-width:100%;
 }
