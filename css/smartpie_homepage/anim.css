@@ -1,29 +1,23 @@
-.tagline{
-  position: absolute;
-  margin-top: 500px;
-  margin-left: 25%;
-  margin-right: 25%;
-  width: auto;
-}
-.tagline-anim {
-  width: 150px;
-	float: left;
-	margin-left: 30px;
-	margin-right: 30px;
+@-webkit-keyframes scrol-anim {
+  0% {top: 0px;}
+  50% {top: 8px;}
+  60% {top: 8px;}
+  70% {top: 6px;}
+  80% {top: 4px;}
+  100% {top: 2px;}
+
 }
 
-.tagline-anim h2  {
-		color: #3690E3;
-    font-family: 'PT Sans Narrow', sans-serif;
-    font-style: bold;
-		background-color: rgba(227,227,227,0.6);
-		padding: 10px 5px;
-		font-size: 45px;
-    text-align: center;
-    border-radius: 7px;
-    border-color: #3690E3;
-    border-width: 4px;
+.scroll-down-icon{
+
+  -webkit-animation: scrol-anim 1s infinite;
+  -moz-animation:    scrol-anim 1s infinite;
+  -o-animation:      scrol-anim 1s infinite;
+  animation:         scrol-anim 1s infinite;
+
 }
+
+
 
 /*Animation for share */
 @-webkit-keyframes share-anim {

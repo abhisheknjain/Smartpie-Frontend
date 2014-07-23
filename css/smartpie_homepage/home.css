@@ -9,17 +9,18 @@
 }
 
 .login-form{
-    height: auto;
-    width: 100%;
-    border: solid;
-    border-color: #ffffff;
-    padding: 20px;
-    margin-top: 150px;
-    margin-left: 70%;
-    margin-right: 70%;
-    border-radius: 5%;
-    background-color:rgba(204,204,204,0.6);  
-    border-width: 3px;
+   height: auto;
+   width: 100%;
+   border: solid;
+   border-color: #CCCCCC;
+   border-width: 1px;
+   padding: 20px;
+   margin-top: 150px;
+   margin-left: 78%;
+   margin-right: 70%;
+   border-radius: 5%;
+   background-color:rgba(204,204,204,0.4);  
+   box-shadow: 15px 15px 40px 0px #000000;
 }
 
 .forgot-password{
@@ -33,16 +34,43 @@
 }
 
 .img-content{
-   position: absolute;
-   margin-top: 160px;
-   margin-left: 44%;
-   background-color:rgba(204,204,204,0.6);
-   border-radius: 25px;
-   color: #ffffff;
-   padding: 10px;
-   border-color: #ffffff;
-   border-style:solid;
-   border-width:1px;
+  position: absolute;
+  margin-top: 160px;
+  margin-left: 45%;
+  background-color:rgba(204,204,204,0.6);
+  border-radius: 25px;
+  color: #ffffff;
+  padding: 10px;
+  border: solid;
+  border-color: #CCCCCC;
+  border-width: 1px;
+  background-color:rgba(204,204,204,0.4);  
+  box-shadow: 15px 15px 40px 0px #000000;;
+}
+
+.scroll-down{
+  position: absolute;
+  margin-top: 550px;
+  margin-right: 45%;
+  margin-left: 45%;
+  color: #ffffff;
+}
+
+.scroll-down-text{
+  font-size: 25px;
+}
+
+.scroll-down-icon{
+  font-size: 50px;
+  float:left;
+  clear:both;
+  margin-left:45%;
+  margin-right:45%;
+  color: #5B9BD5;
+}
+
+.scroll-down-icon:hover{
+  color: #92BFE8;
 }
 
 .postslide{
