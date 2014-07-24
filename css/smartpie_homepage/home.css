@@ -99,7 +99,7 @@ background-image: url('../../img/smartpie_homepage/post_slide-4.jpg');
 }
 
 .smartpie-footer{
-  height: 250px;
+  height: 230px;
   padding: 20px;
   background-image: url('../../img/smartpie_homepage/gray_jean.png');
   background-repeat: repeat;
@@ -122,20 +122,6 @@ background-image: url('../../img/smartpie_homepage/post_slide-4.jpg');
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
 
-}
-
-.get-started{
-  font-family: 'Unkempt', cursive;
-  font-size:165%;
-  font-weight: 800;
-  color: #FFFFFF;
-  
-}
-
-.get-started:hover,
-.get-started:focus {
-  color: #FFFFFF;
-  text-decoration: underline;
 }
 
 .inside-postslide{
@@ -168,4 +154,28 @@ background-image: url('../../img/smartpie_homepage/post_slide-4.jpg');
 
 .inside-postslide > div > center > h3 {
   color: #FFFFFF;
+}
+
+.page-links{
+  margin-top: 80px;
+}
+
+.page-links > center > a{
+  margin-left: 1%;
+  margin-right: 1%;
+  font-size: 18px;
+  color: #6B6B6B;
+}
+
+.modal-body > p {
+  position: absolute;
+  font-size: 30px;
+  
+}
+
+.modal-body > img {
+  margin-left: -18px;
+  margin-bottom: -40px;
+  margin-top: 300px;
+
 }
