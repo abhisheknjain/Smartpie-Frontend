@@ -1,12 +1,44 @@
-
-.search-bar{
-    width: 70%;
-    margin-left: 15%;
-    margin-right: 15%;
-    position: absolute;
-    top: 70px;
-    padding: 0px;
+.nav-links{
+  width: 100%;
+  background-color:rgba(204,204,204,0.3);  
+  height: 50px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  padding-right: 1%;
+  padding-left: 1%;
 }
+
+.nav-links > img{
+  float: left;
+  margin-right: 0.2%;
+}
+
+.nav-links > div{
+  width: 55%;
+  float: left;
+  margin-top: 7px;
+}
+
+.nav-links > a >span{
+  float: right;
+  margin-left: -1px;
+  font-size: 15px;
+  color: #ffffff;
+  height: 50px;
+  width: auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 0.9%;
+  padding-right: 0.9%;
+  border: solid;
+  border-width: 0px 0px 0px 0px ;
+  border-color: #FFFFFF;
+}
+
+.nav-links > a > span:hover{
+  border-width: 0px 0px 3px 0px ;
+}
+
 
 .login-form{
    height: auto;
@@ -15,7 +47,7 @@
    border-color: #CCCCCC;
    border-width: 1px;
    padding: 20px;
-   margin-top: 150px;
+   margin-top: 70px;
    margin-left: 78%;
    margin-right: 70%;
    border-radius: 5%;
@@ -35,7 +67,7 @@
 
 .img-content{
   position: absolute;
-  margin-top: 160px;
+  margin-top: 80px;
   margin-left: 45%;
   background-color:rgba(204,204,204,0.6);
   border-radius: 25px;
@@ -50,7 +82,7 @@
 
 .scroll-down{
   position: absolute;
-  margin-top: 550px;
+  margin-top: 490px;
   margin-right: 45%;
   margin-left: 45%;
   color: #ffffff;
@@ -167,15 +199,16 @@ background-image: url('../../img/smartpie_homepage/post_slide-4.jpg');
   color: #6B6B6B;
 }
 
+.modal-body{
+  background-image: url('../../img/smartpie_homepage/modalbcg1.png');
+}
+
 .modal-body > p {
-  position: absolute;
-  font-size: 30px;
+  font-size: 20px;
   
 }
 
 .modal-body > img {
   margin-left: -18px;
   margin-bottom: -40px;
-  margin-top: 300px;
-
 }
