@@ -118,12 +118,10 @@
  
 
 #post-slide-1{
-/*background-image: url('../../img/smartpie_homepage/post_slide-1.jpg');*/
-background-color: #4382EE;
+background-image: url('../../img/smartpie_homepage/post_slide-1.jpg');
 }
 #post-slide-2{
-/*background-image: url('../../img/smartpie_homepage/post_slide-2.jpg');*/
-background-color: #8C4303;
+background-image: url('../../img/smartpie_homepage/post_slide-2.jpg');
 }
 #post-slide-3{
 background-image: url('../../img/smartpie_homepage/post_slide-3.jpg');

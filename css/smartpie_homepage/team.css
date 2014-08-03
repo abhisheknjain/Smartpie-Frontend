@@ -1,56 +1,28 @@
-.team-body{
-	border-color: #000000;
-	border-width: 0px 0px 2px 0px;
-	border-style: solid;
-	background-color:#EE8A43;
-	padding-left: 10%;
-	padding-right: 10%;
-	background-color: #EE4343;
-	margin-top: -20px;
+.top-nav{
+	padding-right: 80px;
+	padding-left: 30px;
+	padding-top: 10px;
+
+
 }
 
-.team-head{
-	width: auto;
-	margin-left: 37%;
-	margin-right: 37%;
-}
-
-.mem-img{
-	border-style: solid;
-	border-radius: 10%;
-	border-color: #000000;
-	box-shadow: 5px 5px 20px #000000;
-}
-
-.team-mem{
-	cursor: pointer;
-	margin-right: 4%;
-	margin-left: 4%;
-	margin-top: 30px;
-	margin-bottom: 50px;
-	display: inline-block;
-}
-
-.team-mem-info{
-	width: 250px;
-	height: 250px;
-	display: block;
+.top-nav > img{
 	position: absolute;
-	margin-top: -250px;
-	padding: 2.5px;
-	border-radius: 10%;
-	border-color: #000000;
+	-webkit-filter: grayscale(1);
+  	filter: grayscale(1);
 }
 
-.team-mem-info > span{
-	visibility: hidden;
+.top-nav > a > span{
+	float: right;
+	margin-right: 20px;
+	margin-top: 35px;
+	width: auto;
+	height: 30px;
+	background-color: blue;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	font-size: 23px; 
+	cursor: pointer;
+	border-radius: 5px;
 }
-
-.team-mem-info:hover{
-	background-color:rgba(204,204,204,0.4);
-}
-
-.team-mem-info:hover > span{
-	visibility: visible;
-}
-	
