@@ -1,0 +1,40 @@
+.hiw-content{
+	border-color: #000000;
+	border-width: 0px 0px 2px 0px;
+	border-style: solid;
+	background-color:#EE8A43;
+	padding: 50px;
+}
+
+.hiw-content > center > img{
+	margin-top: 50px;
+}
+
+
+.about-content{
+	background-color:#43B2EE;
+	border-color: #000000;
+	border-width: 0px 0px 2px 0px;
+	border-style: solid;
+	margin-top: -30px;
+}
+
+.about-content > p{
+	font-size: 30px;
+	line-height: 40px;
+}
+
+.get-started{
+	background-color:#43EE93
+}
+
+.get-started-info{
+	margin-top: 50px;
+	font-size: 30px;
+	float: left;
+	position: absolute;
+}
+
+.get-started-form{
+	margin-left: 50%;
+}
