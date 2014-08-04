@@ -39,6 +39,10 @@
   border-width: 0px 0px 3px 0px ;
 }
 
+.nav-links > a > span:active{
+ border-width: 0px 0px 3px 0px ; 
+}
+
 
 .login-form{
    height: auto;
@@ -113,21 +117,21 @@
   border-bottom: 0.2px;
   border-top: solid;
   border-bottom: solid;
-  border-color: #BFBFBF;
+  border-color: #000000;
 }
  
 
 #post-slide-1{
-background-image: url('../../img/smartpie_homepage/post_slide-1.jpg');
+background-color: #1E5AA3;
 }
 #post-slide-2{
-background-image: url('../../img/smartpie_homepage/post_slide-2.jpg');
+background-color: #784225;
 }
 #post-slide-3{
-background-image: url('../../img/smartpie_homepage/post_slide-3.jpg');
+background-color: #E6A73E;
 }
 #post-slide-4{
-background-image: url('../../img/smartpie_homepage/post_slide-4.jpg');
+background-color: #006B3D;
 }
 
 .smartpie-footer{

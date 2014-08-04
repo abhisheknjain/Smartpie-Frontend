@@ -1,11 +1,6 @@
-postslide background
 content
 google analytics
 implement the notes of SEO
-
 form submit php
-how it works
-
-team aboutus contactus page
-
-make it mobile friendly
+link navs
+footer links
