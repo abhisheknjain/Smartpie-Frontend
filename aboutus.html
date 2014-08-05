@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Smartpie</title>
+        <title>More about Smartpie</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 		<link href='http://fonts.googleapis.com/css?family=Dancing+Script:700' rel='stylesheet' type='text/css'>
@@ -17,9 +17,7 @@
         <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap/bootstrap-theme.css">
         <link rel="stylesheet" href="css/bootstrap/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/smartpie_homepage/howitworks.css">
         <link rel="stylesheet" href="css/smartpie_homepage/aboutus.css">
-        <link rel="stylesheet" href="css/smartpie_homepage/team.css">
         <script src="js/bootstrap/bootstrap.js"></script>
         <script src="js/bootstrap/bootstrap.min.js"></script>
         <script src="js/vendor/modernizr-2.7.1.min.js"></script>
@@ -67,14 +65,13 @@
                 background-color:#43B2EE;
                 color: #F2F2F2;
                 padding-top: 30px;
-                width: 100%;
 			}
 		</style>
     </head>
     <body>
         
         <div class="nav-links" style="margin-top:-60px; position:fixed; z-index:5000">
-            <img src="img/smartpie_homepage/Logo.png" alt="Smartpie Logo" height="50px" width="53.8px" align="middle">
+            <a href="index.html"><img src="img/smartpie_homepage/Logo.png" alt="Smartpie Logo" height="50px" width="53.8px" align="middle"></a>
             
             <div class="search-bar">
                 <input class="form-control" type="text" placeholder="Search for schools here" style="height:38px;">
@@ -271,30 +268,36 @@
             </div>
             
             <div class="get-started-form">
-                <form role="form" name="signin">
+                <form action="getstarted.php" role="form" onsubmit="return validateGetstartedForm()" method="post" name="getstarted" >
                     <div class="form-group">
-                        <input class="form-control input-lg" type="text" id="name" name="name" placeholder="My name is">
+                        <input class="form-control input-lg" type="text" id="name_gs" name="name_gs" placeholder="My name is">
+                        <p id="p_name_gs" style="float:left;display:none;color:red;"></p>
                     </div>
                     <div class="form-group">
-                        <input class="form-control input-lg" type="email" id="emailid" name="emailid" placeholder="This is my Email ID">
+                        <input class="form-control input-lg" type="email" id="emailid_gs" name="emailid_gs" placeholder="This is my Email ID">
+                        <p id="p_email_gs" style="float:left;display:none;color:red;"></p>
                     </div>
                     <div class="form-group">
-                        <select class="form-control input-lg" type="text" id="desg" name="desg">
+                        <select class="form-control input-lg" type="text" id="desg_gs" name="desg_gs">
                             <option value="0">I will use Smartpie as a</option>
                             <option value="Principal">Principal</option>
                             <option value="Teacher">Teacher</option>
                             <option value="Student">Student</option>
                             <option value="Content Creator">Content Creator</option>
                         </select>
+                        <p id="p_desg_gs" style="float:left;display:none;color:red;"></p>
                     </div>
                     <div class="form-group">
-                        <input class="form-control input-lg" type="text" id="org" name="org" placeholder="School/Organization/Company Name">
+                        <input class="form-control input-lg" type="text" id="org_gs" name="org_gs" placeholder="School/Organization/Company Name">
+                        <p id="p_org_gs" style="float:left;display:none;color:red;"></p>
                     </div>
                     <div class="form-group">
-                        <input class="form-control input-lg" type="text" id="how" name="how" placeholder="Website">
+                        <input class="form-control input-lg" type="text" id="web_gs" name="web_gs" placeholder="Website">
+                        <p id="p_web_gs" style="float:left;display:none;color:red;"></p>
                     </div>
                     <div class="form-group">
-                        <input class="form-control input-lg" type="text" id="how" name="how" placeholder="I got to know about Smartpie from">
+                        <input class="form-control input-lg" type="text" id="how_gs" name="how_gs" placeholder="I got to know about Smartpie from">
+                        <p id="p_how_gs" style="float:left;display:none;color:red;"></p>
                     </div>
                     <div class="form-group">
                         <button class="form-control input-lg btn btn-warning btn-lg"> Get Started</button>
@@ -320,12 +323,12 @@
                 </p>
             </div>  
             <div class="contactus-form">
-                <form class="form-contactus" role="form" onsubmit="return validateContactForm()" method="post" name="contact">
+                <form class="form-contactus" action="contactus.php" role="form" onsubmit="return validateContactForm()" method="post" name="contact" >
                     <div class="form-group">
                         <div class="row">
                             <div class="col-md-10">
-                                <input class="form-control input-lg" type="text" id="name2" name="name2" placeholder="Name">
-                                <p id="pname2" style="float:left;display:none;color:red;"></p>
+                                <input class="form-control input-lg" type="text" id="name_cu" name="name_cu" placeholder="Name">
+                                <p id="p_name_cu" style="float:left;display:none;color:red;"></p>
                             </div>
                         </div>
                     </div>
@@ -333,8 +336,8 @@
                     <div class="form-group">
                         <div class="row">
                             <div class="col-md-10">
-                                <input class="form-control input-lg" type="text" id="email1" name="email1" placeholder="Email ID">
-                                <p id="pemail1" style="float:left;display:none;color:red;"></p>
+                                <input class="form-control input-lg" type="text" id="email_cu" name="email_cu" placeholder="Email ID">
+                                <p id="p_email_cu" style="float:left;display:none;color:red;"></p>
                             </div>
                         </div>
                     </div>
@@ -342,8 +345,8 @@
                     <div class="form-group">
                         <div class="row">
                             <div class="col-md-10">
-                                <input class="form-control input-lg" type="text" id="phone_no1" name="phone_no1" placeholder="Phone No.">
-                                <p id="pphone_no1" style="float:left;display:none;color:red;"></p>
+                                <input class="form-control input-lg" type="text" id="phone_no_cu" name="phone_no_cu" placeholder="Phone No.">
+                                <p id="p_phone_no_cu" style="float:left;display:none;color:red;"></p>
                             </div>
                         </div>
                     </div>
@@ -351,8 +354,8 @@
                     <div class="form-group">
                         <div class="row">
                             <div class="col-md-10">
-                                <input class="form-control input-lg" type="text" id="country1" name="country1" placeholder="Country">
-                                <p id="pcountry1" style="float:left;display:none;color:red;"></p>    
+                                <input class="form-control input-lg" type="text" id="country_cu" name="country_cu" placeholder="Country">
+                                <p id="p_country_cu" style="float:left;display:none;color:red;"></p>    
                             </div>
                         </div>
                     </div>
@@ -360,8 +363,8 @@
                     <div class="form-group">
                         <div class="row">
                             <div class="col-md-10">
-                                <input class="form-control input-lg" type="text" id="city1" name="city1" placeholder="City">
-                                <p id="pcity1" style="float:left;display:none;color:red;"></p>
+                                <input class="form-control input-lg" type="text" id="city_cu" name="city_cu" placeholder="City">
+                                <p id="p_city_cu" style="float:left;display:none;color:red;"></p>
                             </div>
                         </div>
                     </div>
@@ -369,8 +372,8 @@
                     <div class="form-group">
                         <div class="row">          
                             <div class="col-md-10">
-                                <textarea class="form-control input-lg resizedBox" rows="5" cols="20" id="message1" name="message1" placeholder="Message"></textarea>
-                                <p id="pmessage1" style="float:left;display:none;color:red;"></p>
+                                <textarea class="form-control input-lg resizedBox" rows="5" cols="20" id="message_cu" name="message_cu" placeholder="Message"></textarea>
+                                <p id="p_message_cu" style="float:left;display:none;color:red;"></p>
                             </div>          
                         </div>
                     </div>
@@ -391,24 +394,79 @@
                     </div>
                 </form>
             </div> 
-
         </div>
 
-        <div class="social-icons">
-            <a href="http://goo.gl/Ohzq28" target="_blank"><img src="img/smartpie_homepage/fb.png" alt="Facebook Link" height="40" width="40" style="margin:15px"></a>
-            <a href="http://goo.gl/Z4867X" target="_blank"><img src="img/smartpie_homepage/gplus.png" alt="GooglePlus Link" height="40" width="40" style="margin:15px"></a>
-            <a href="http://goo.gl/VjnlVf" target="_blank"><img src="img/smartpie_homepage/twitter.png" alt="Twitter Link" height="40" width="40" style="margin:15px"></a>
-            <a href="http://goo.gl/wg2gNJ" target="_blank"><img src="img/smartpie_homepage/quora.png" alt="Quora Link" height="40" width="40" style="margin:15px"></a>
-        </div>
-
-        <div class="page-links">
-            <center>
-                <a href="#">Team</a>
-                <a href="#">About Us</a>
-                <a href="#">Contact Us </a>
-                <a href="#">Get started</a>
-                <a href="#">Blogs</a>                   
-            </center>
+        <div class="smartpie-footer">
+            <div class="quote-carousel">
+                <ul class="quote">
+                    <li>
+                        <span>
+                            <center>
+                                <p>Tell me and I forget, teach me and I remember, involve me and I learn.</p>
+                                <p style="margin-left:650px;">
+                                - Benjamin Franklin
+                                </p>
+                            </center>
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            <center>
+                                <p>Education is the most powerful weapon which you can use to change the world.</p>
+                                <p style="margin-left:740px;">
+                                - Nelson Mandela
+                                </p>
+                            </center>
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            <center>
+                                <p>Education is not preparation for life; education is life itself.</p>
+                                <p style="margin-left:570px;">
+                                - John Dewey
+                                </p>
+                            </center>
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            <center>
+                                <p>Liberty without Learning is always in peril and Learning without Liberty is always in vain.</p>
+                                <p style="margin-left:900px;">
+                                - John F. Kennedy
+                                </p>
+                            </center>
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            <center>
+                                <p>Formal education will make you a living; self-education will make you a fortune.</p>
+                                <p style="margin-left:850px;">
+                                - Jim Rohn
+                                </p>
+                            </center>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <div class="social-icons">
+                <a href="http://goo.gl/Ohzq28" target="_blank"><img src="img/smartpie_homepage/fb.png" alt="Facebook Link" height="40" width="40" style="margin:15px"></a>
+                <a href="http://goo.gl/Z4867X" target="_blank"><img src="img/smartpie_homepage/gplus.png" alt="GooglePlus Link" height="40" width="40" style="margin:15px"></a>
+                <a href="http://goo.gl/VjnlVf" target="_blank"><img src="img/smartpie_homepage/twitter.png" alt="Twitter Link" height="40" width="40" style="margin:15px"></a>
+                <a href="http://goo.gl/wg2gNJ" target="_blank"><img src="img/smartpie_homepage/quora.png" alt="Quora Link" height="40" width="40" style="margin:15px"></a>
+            </div>
+            <div class="page-links">
+                <center>
+                    <a href="aboutus.html#aboutus">About Us</a>
+                    <a href="aboutus.html#howitworks">How it works</a>
+                    <a href="aboutus.html#team">Team</a>
+                    <a href="aboutus.html#contactus">Contact Us </a>
+                    <a href="aboutus.html#getstarted">Get started</a>
+                    <a href="http://goo.gl/rU9VDk" target="_blank">Blogs</a>                    
+                </center>
+            </div>
         </div>
         <script src="js/parallax_scrolling/imagesloaded.js"></script>
         <script src="js/parallax_scrolling/skrollr.js"></script>

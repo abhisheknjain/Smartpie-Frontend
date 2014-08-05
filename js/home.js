@@ -3,96 +3,191 @@ function navselector(navval){
 }
 
 
+
 function validateContactForm(){
   var flag=1;
-  var x=document.forms["contact"]["name2"].value;
+  var x=document.forms["contact"]["name_cu"].value;
   if (x==null || x==""){
-    document.getElementById("name2").className = document.getElementById("name2").className + " has-error";
+    document.getElementById("name_cu").className = document.getElementById("name_cu").className + " has-error";
     flag=0;
-    document.getElementById("pname2").style.display="block";
-    document.getElementById("pname2").innerHTML="Please provide your name";
+    document.getElementById("p_name_cu").style.display="block";
+    document.getElementById("p_name_cu").innerHTML="Please provide your name";
   }
   else if (x.length<2){
-    document.getElementById("name2").className = document.getElementById("name2").className + " has-error";
+    document.getElementById("name_cu").className = document.getElementById("name_cu").className + " has-error";
     flag=0;
-    document.getElementById("pname2").style.display="block";
-    document.getElementById("pname2").innerHTML="Seems like your name is not appropirate";
+    document.getElementById("p_name_cu").style.display="block";
+    document.getElementById("p_name_cu").innerHTML="Seems like your name is not appropirate";
   }
   else{
-    document.getElementById("name2").className = document.getElementById("name2").className.replace(" has-error", "");
-    document.getElementById("pname2").style.display="none";
+    document.getElementById("name_cu").className = document.getElementById("name_cu").className.replace(" has-error", "");
+    document.getElementById("p_name_cu").style.display="none";
   }
 
-  var x=document.forms["contact"]["email1"].value;
+  var x=document.forms["contact"]["email_cu"].value;
   if (x==null || x==""){
-    document.getElementById("email1").className = document.getElementById("email1").className + " has-error";
+    document.getElementById("email_cu").className = document.getElementById("email_cu").className + " has-error";
     flag=0;
-    document.getElementById("pemail1").style.display="block";
-    document.getElementById("pemail1").innerHTML="Please enter your email id";
+    document.getElementById("p_email_cu").style.display="block";
+    document.getElementById("p_email_cu").innerHTML="Please enter your email id";
   }
   else if(/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/.test(x) == false){
-    document.getElementById("email1").className = document.getElementById("email1").className + " has-error";
+    document.getElementById("email_cu").className = document.getElementById("email_cu").className + " has-error";
     flag=0;
-    document.getElementById("pemail1").style.display="block";
-    document.getElementById("pemail1").innerHTML="Please enter valid email id";
+    document.getElementById("p_email_cu").style.display="block";
+    document.getElementById("p_email_cu").innerHTML="Please enter valid email id";
   }
   else{
-    document.getElementById("email1").className = document.getElementById("email1").className.replace(" has-error", "");
-    document.getElementById("pemail1").style.display="none";
+    document.getElementById("email_cu").className = document.getElementById("email_cu").className.replace(" has-error", "");
+    document.getElementById("p_email_cu").style.display="none";
   }
 
-  var x=document.forms["contact"]["phone_no1"].value;
+  var x=document.forms["contact"]["phone_no_cu"].value;
   if (x==null || x==""){
-    document.getElementById("phone_no1").className = document.getElementById("phone_no1").className + " has-error";
+    document.getElementById("phone_no_cu").className = document.getElementById("phone_no_cu").className + " has-error";
     flag=0;
-    document.getElementById("pphone_no1").style.display="block";
-    document.getElementById("pphone_no1").innerHTML="Please enter your phone number";
+    document.getElementById("p_phone_no_cu").style.display="block";
+    document.getElementById("p_phone_no_cu").innerHTML="Please enter your phone number";
   }
   else if(/^\d+$/.test(x) == false){
-    document.getElementById("phone_no1").className = document.getElementById("phone_no1").className + " has-error";
+    document.getElementById("phone_no_cu").className = document.getElementById("phone_no_cu").className + " has-error";
     flag=0;
-    document.getElementById("pphone_no1").style.display="block";
-    document.getElementById("pphone_no1").innerHTML="Please enter valid phone number";
+    document.getElementById("p_phone_no_cu").style.display="block";
+    document.getElementById("p_phone_no_cu").innerHTML="Please enter valid phone number";
   }
   else{
-    document.getElementById("phone_no1").className = document.getElementById("phone_no1").className.replace(" has-error", "");
-    document.getElementById("pphone_no1").style.display="none";
+    document.getElementById("phone_no_cu").className = document.getElementById("phone_no_cu").className.replace(" has-error", "");
+    document.getElementById("p_phone_no_cu").style.display="none";
   }
   
-  var x=document.forms["contact"]["country1"].value;
+  var x=document.forms["contact"]["country_cu"].value;
   if (x==null || x==""){
-    document.getElementById("country1").className = document.getElementById("country1").className + " has-error";
+    document.getElementById("country_cu").className = document.getElementById("country_cu").className + " has-error";
     flag=0;
-    document.getElementById("pcountry1").style.display="block";
-    document.getElementById("pcountry1").innerHTML="Please provide your country name";
+    document.getElementById("p_country_cu").style.display="block";
+    document.getElementById("p_country_cu").innerHTML="Please provide your country name";
   }
   else{
-    document.getElementById("country1").className = document.getElementById("country1").className.replace(" has-error", "");
-    document.getElementById("pcountry1").style.display="none";
+    document.getElementById("country_cu").className = document.getElementById("country_cu").className.replace(" has-error", "");
+    document.getElementById("p_country_cu").style.display="none";
   }
 
-  var x=document.forms["contact"]["city1"].value;
+  var x=document.forms["contact"]["city_cu"].value;
   if (x==null || x==""){
-    document.getElementById("city1").className = document.getElementById("city1").className + " has-error";
-    document.getElementById("pcity1").style.display="block";
-    document.getElementById("pcity1").innerHTML="Please provide your city name";
+    document.getElementById("city_cu").className = document.getElementById("city_cu").className + " has-error";
+    document.getElementById("p_city_cu").style.display="block";
+    document.getElementById("p_city_cu").innerHTML="Please provide your city name";
     flag=0;
   }
   else{
-    document.getElementById("city1").className = document.getElementById("city1").className.replace(" has-error", "");
-    document.getElementById("pcity1").style.display="none";
+    document.getElementById("city_cu").className = document.getElementById("city_cu").className.replace(" has-error", "");
+    document.getElementById("p_city_cu").style.display="none";
   }
 
-  var x=document.forms["contact"]["message1"].value;
+  var x=document.forms["contact"]["message_cu"].value;
   if (x==null || x==""){
-    document.getElementById("message1").className = document.getElementById("message1").className + " has-error";
-    document.getElementById("pmessage1").style.display="block";
-    document.getElementById("pmessage1").innerHTML="Please provide your message";
+    document.getElementById("message_cu").className = document.getElementById("message_cu").className + " has-error";
+    document.getElementById("p_message_cu").style.display="block";
+    document.getElementById("p_message_cu").innerHTML="Please provide your message";
     flag=0;
   }
   else{
-    document.getElementById("message1").className = document.getElementById("message1").className.replace(" has-error", "");
-    document.getElementById("pmessage1").style.display="none";
+    document.getElementById("message_cu").className = document.getElementById("message_cu").className.replace(" has-error", "");
+    document.getElementById("p_message_cu").style.display="none";
+  }  
+  
+  if(flag==0){
+    return false;
+  }
+  else{
+    return true;    
+  }
+}
+
+function validateGetstartedForm(){
+  var flag=1;
+  var x=document.forms["getstarted"]["name_gs"].value;
+  if (x==null || x==""){
+    document.getElementById("name_gs").className = document.getElementById("name_gs").className + " has-error";
+    flag=0;
+    document.getElementById("p_name_gs").style.display="block";
+    document.getElementById("p_name_gs").innerHTML="Please provide your name";
+  }
+  else if (x.length<2){
+    document.getElementById("name_gs").className = document.getElementById("name_gs").className + " has-error";
+    flag=0;
+    document.getElementById("p_name_gs").style.display="block";
+    document.getElementById("p_name_gs").innerHTML="Seems like your name is not appropirate";
+  }
+  else{
+    document.getElementById("name_gs").className = document.getElementById("name_gs").className.replace(" has-error", "");
+    document.getElementById("p_name_gs").style.display="none";
+  }
+
+  var x=document.forms["getstarted"]["emailid_gs"].value;
+  if (x==null || x==""){
+    document.getElementById("emailid_gs").className = document.getElementById("emailid_gs").className + " has-error";
+    flag=0;
+    document.getElementById("p_email_gs").style.display="block";
+    document.getElementById("p_email_gs").innerHTML="Please enter your email id";
+  }
+  else if(/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/.test(x) == false){
+    document.getElementById("emailid_gs").className = document.getElementById("emailid_gs").className + " has-error";
+    flag=0;
+    document.getElementById("p_email_gs").style.display="block";
+    document.getElementById("p_email_gs").innerHTML="Please enter valid email id";
+  }
+  else{
+    document.getElementById("email_gs").className = document.getElementById("email_gs").className.replace(" has-error", "");
+    document.getElementById("p_email_gs").style.display="none";
+  }
+
+  var x=document.forms["getstarted"]["desg_gs"].value;
+  if (x=="0"){
+    document.getElementById("desg_gs").className = document.getElementById("desg_gs").className + " has-error";
+    flag=0;
+    document.getElementById("p_desg_gs").style.display="block";
+    document.getElementById("p_desg_gs").innerHTML="Please select your role";
+  }
+  else{
+    document.getElementById("desg_gs").className = document.getElementById("desg_gs").className.replace(" has-error", "");
+    document.getElementById("p_desg_gs").style.display="none";
+  }
+  
+  var x=document.forms["getstarted"]["org_gs"].value;
+  if (x==null || x==""){
+    document.getElementById("org_gs").className = document.getElementById("org_gs").className + " has-error";
+    flag=0;
+    document.getElementById("p_org_gs").style.display="block";
+    document.getElementById("p_org_gs").innerHTML="Please provide your organization name";
+  }
+  else{
+    document.getElementById("org_gs").className = document.getElementById("org_gs").className.replace(" has-error", "");
+    document.getElementById("p_org_gs").style.display="none";
+  }
+
+  var x=document.forms["getstarted"]["web_gs"].value;
+  if (x==null || x==""){
+    document.getElementById("web_gs").className = document.getElementById("web_gs").className + " has-error";
+    document.getElementById("p_web_gs").style.display="block";
+    document.getElementById("p_web_gs").innerHTML="Please provide your website";
+    flag=0;
+  }
+  else{
+    document.getElementById("web_gs").className = document.getElementById("web_gs").className.replace(" has-error", "");
+    document.getElementById("p_web_gs").style.display="none";
+  }
+
+  var x=document.forms["getstarted"]["how_gs"].value;
+  if (x==null || x==""){
+    document.getElementById("how_gs").className = document.getElementById("how_gs").className + " has-error";
+    document.getElementById("p_how_gs").style.display="block";
+    document.getElementById("p_how_gs").innerHTML="Please provide your message";
+    flag=0;
+  }
+  else{
+    document.getElementById("how_gs").className = document.getElementById("how_gs").className.replace(" has-error", "");
+    document.getElementById("p_how_gs").style.display="none";
   }  
   
   if(flag==0){

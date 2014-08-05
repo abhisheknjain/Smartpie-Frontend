@@ -3,10 +3,132 @@
 	border-color: #000000;
 	border-width: 0px 0px 2px 0px;
 	border-style: solid;
-	padding: 30px;
+	margin-top: -30px;
+	padding: 50px;
+	padding-left: 10%;
+	padding-right: 10%;
 }
 
+
 .about-content > p{
-	font-size: 30px;
+	font-size: 20px;
 	line-height: 40px;
+}
+
+.hiw-content{
+	border-color: #000000;
+	border-width: 0px 0px 2px 0px;
+	border-style: solid;
+	background-color:#EE8A43;
+	padding: 50px;
+}
+
+.hiw-content > center > img{
+	margin-top: 50px;
+}
+
+.team-body{
+	border-color: #000000;
+	border-width: 0px 0px 2px 0px;
+	border-style: solid;
+	background-color: #EE434E;
+	padding: 50px;
+	width: 100%;
+	padding-left: 15%;
+	padding-right: 15%;
+}
+
+.team-mem{
+	width: 250px;
+	height: auto;
+	cursor: pointer;
+	margin-right: 2.5%;
+	margin-left: 2.5%;
+	margin-top: 20px;
+	margin-bottom: 40px;
+	display: inline-block;
+}
+
+.mem-img{
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 10%;
+	border-color: #000000;
+	box-shadow: 5px 5px 20px #000000;
+}
+.team-mem-info{
+	width: 250px;
+	height: 250px;
+	display: block;
+	position: absolute;
+	margin-top: -251px;
+	margin-left: 0px;
+	padding: 2.5px;
+	border-radius: 10%;
+}
+
+.team-mem-info > span{
+	visibility: hidden;
+}
+
+.team-mem-info:hover{
+	background-color:rgba(204,204,204,0.6);
+}
+
+.team-mem-info:hover > span{
+	visibility: visible;
+}
+
+
+.get-started-content{
+	background-color:#43EE93;
+	padding-left: 5%;
+	padding-right: 5%;
+	border-color: #000000;
+	border-width: 0px 0px 2px 0px;
+	border-style: solid;
+	padding: 50px;
+}
+.getstarted-head{
+	display: block;
+	margin-bottom: 30px;
+}
+.get-started-info{
+	font-size: 30px;
+	display: inline-block;
+	width: 60%;
+}
+
+.get-started-form{
+	width: 40%;
+	display: inline-block;
+	margin-left: 60%;
+	margin-top: -50px;
+}
+
+.contactus-content{
+	background-color:#EED443;
+	padding-left: 5%;
+	padding-right: 5%;
+	border-color: #000000;
+	border-width: 0px 0px 2px 0px;
+	border-style: solid;
+	padding: 50px;
+}
+
+.contactus-head{
+	display: block;
+	margin-bottom: 30px;
+}
+
+.contactus-form{
+	display: inline-block;
+	width: 60%;
+}
+
+.contactus-info{
+	font-size: 30px;
+	width: 40%;
+	display: inline-block;
+	float: right;
 }

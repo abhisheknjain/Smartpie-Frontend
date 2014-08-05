@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Smartpie</title>
+        <title>Smartpie | Home</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 		<link href='http://fonts.googleapis.com/css?family=Dancing+Script:700' rel='stylesheet' type='text/css'>
@@ -17,22 +17,50 @@
         <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap/bootstrap-theme.css">
         <link rel="stylesheet" href="css/bootstrap/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/smartpie_homepage/aboutus.css">
         <script src="js/bootstrap/bootstrap.js"></script>
         <script src="js/bootstrap/bootstrap.min.js"></script>
         <script src="js/vendor/modernizr-2.7.1.min.js"></script>
         <script src="js/modal/prefixfree.min.js"></script>
         <script src="js/home/home.js"></script>
+         <!-- For scroll up -->
+	    <script type='text/javascript'>
+	    $(document).ready(function() {
+	        $.fn.scrollToTop = function() {
+	        $(this).hide().removeAttr("href");
+	        if ($(window).scrollTop() != "0") {
+	            $(this).fadeIn("slow")
+	        }
+	        var scrollDiv = $(this);
+	        $(window).scroll(function() {
+	            if ($(window).scrollTop() == "0") {
+	            $(scrollDiv).fadeOut("slow")
+	            } else {
+	            $(scrollDiv).fadeIn("slow")
+	            }
+	        });
+	        $(this).click(function() {
+	            $("html, body").animate({
+	            scrollTop: 0
+	            }, "slow")
+	        })
+	        }
+	    });   
+
+	    $(document).ready(function() {
+	   		$("#w2b-StoTop").scrollToTop();
+	    });
+
+	    </script>
         <style type="text/css">
 			body {
 				font-family: 'Comic Sans MS', cursive, sans-serif;
 			}
 		</style>
     </head>
+    <a href='#' id='w2b-StoTop' style='display:none;'>Top&nbsp;<span class="glyphicon glyphicon-chevron-up"></span></a>
     <body>
-
-       	
-       	
-       	<main>
+      	<main>
        	 
 	        <section id="slide-1" class="homeSlide">
 	        	<div class="bcg"
@@ -41,7 +69,7 @@
        				data-anchor-target="#slide-1"
        			>
        				<div class="nav-links">
-			    		<img src="img/smartpie_homepage/Logo.png" alt="Smartpie Logo" height="50px" width="53.8px" align="middle">
+			    		<a href="index.html"><img src="img/smartpie_homepage/Logo.png" alt="Smartpie Logo" height="50px" width="53.8px" align="middle"></a>
 			    		
    						<div class="search-bar">
    							<input class="form-control" type="text" placeholder="Search for schools here" style="height:38px;">
@@ -120,8 +148,8 @@
 				    	<span class="scroll-down-text">
 				    		
 				    	</span>
-				    	<span id="scroll-down-icon" class="glyphicon glyphicon-chevron-down scroll-down-icon">
-				    	</span>
+				    	<a href="#knowmore"><span id="scroll-down-icon" class="glyphicon glyphicon-chevron-down scroll-down-icon">
+				    	</span></a>
 			    	</div>
 
 			    	<div style="margin-top: 500px; visibility: hidden;">
@@ -363,7 +391,7 @@
 		    		</div>
 				</div>
 		    </section>
-			<div class="smartpie-footer">
+			<div class="smartpie-footer" style="background-image:url('img/smartpie_homepage/gray_jean.png');">
 				<div class="quote-carousel">
 					<ul class="quote">
 						<li>
@@ -426,11 +454,12 @@
 				</div>
 				<div class="page-links">
 					<center>
-					<a href="#">Team</a>
-					<a href="#">About Us</a>
-					<a href="#">Contact Us </a>
-					<a href="#">Get started</a>
-					<a href="#">Blogs</a>					
+					<a href="aboutus.html#aboutus">About Us</a>
+					<a href="aboutus.html#howitworks">How it works</a>
+					<a href="aboutus.html#team">Team</a>
+					<a href="aboutus.html#contactus">Contact Us </a>
+					<a href="aboutus.html#getstarted">Get started</a>
+					<a href="http://goo.gl/rU9VDk" target="_blank">Blogs</a>					
 				</center>
 				</div>
 			</div>
@@ -472,7 +501,7 @@
 			        Hello World 
 			        Hello World 
 			        Hello World </p>
-			        
+			        <img src="img/smartpie_homepage/modalbcg1.png">
 			      </div>
 			      <div class="modal-footer">
 			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -497,7 +526,7 @@
 			        <p>
 			        	This routine of learning will assist some students to identify their space of fondness and prove to be a knowledge pool for others. 
 			        </p>
-			        
+			        <img src="img/smartpie_homepage/modalbcg1.png">
 			      </div>
 			      <div class="modal-footer">
 			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

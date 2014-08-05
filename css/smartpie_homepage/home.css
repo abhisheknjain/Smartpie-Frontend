@@ -8,7 +8,7 @@
   padding-left: 1%;
 }
 
-.nav-links > img{
+.nav-links > a >img{
   float: left;
   margin-right: 0.2%;
 }
@@ -102,7 +102,7 @@
   clear:both;
   margin-left:45%;
   margin-right:45%;
-  color: #5B9BD5;
+  color: #ffffff;
 }
 
 .scroll-down-icon:hover{
@@ -137,9 +137,7 @@ background-color: #006B3D;
 .smartpie-footer{
   height: 230px;
   padding: 20px;
-  background-image: url('../../img/smartpie_homepage/gray_jean.png');
   background-repeat: repeat;
-  background-color: #BFBFBF;
 }
 
 
@@ -204,7 +202,6 @@ background-color: #006B3D;
 }
 
 .modal-body{
-  background-image: url('../../img/smartpie_homepage/modalbcg1.png');
 }
 
 .modal-body > p {
@@ -215,4 +212,24 @@ background-color: #006B3D;
 .modal-body > img {
   margin-left: -18px;
   margin-bottom: -40px;
+}
+
+#w2b-StoTop {
+  background-color: #A5A5A5;
+  bottom: 10px;
+  -webkit-border-radius:  8px 0 0 8px;
+  border-radius: 8px 0 0 8px;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-weight: 700;
+  font-family: century;
+  letter-spacing:1px;
+  font-size:14px;
+  padding: 10px;
+  position: fixed;
+  right: 0px;
+  text-align: Left;
+  text-decoration: none;
+  width: 70px;
+  z-index: 6000;
 }

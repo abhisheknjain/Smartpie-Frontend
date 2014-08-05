@@ -1,6 +1,21 @@
+*form submit php and js
+*change yellow and green color
+*modal background image allignment
+*goto home on click of icon
+*fix navbar in home page
+*change color of down arrow
+*link navs
+*footer links connection
+*change title name of blog and other pages
+*font size of about us
+*seperate the css files
+
 content
 google analytics
 implement the notes of SEO
-form submit php
-link navs
-footer links
+
+
+Quora's Q transparent
+reach top button
+contact info in footer
+
