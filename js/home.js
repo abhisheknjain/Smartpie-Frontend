@@ -11,13 +11,13 @@ function validateContactForm(){
     document.getElementById("name_cu").className = document.getElementById("name_cu").className + " has-error";
     flag=0;
     document.getElementById("p_name_cu").style.display="block";
-    document.getElementById("p_name_cu").innerHTML="Please provide your name";
+    document.getElementById("p_name_cu").innerHTML="Your good name please";
   }
   else if (x.length<2){
     document.getElementById("name_cu").className = document.getElementById("name_cu").className + " has-error";
     flag=0;
     document.getElementById("p_name_cu").style.display="block";
-    document.getElementById("p_name_cu").innerHTML="Seems like your name is not appropirate";
+    document.getElementById("p_name_cu").innerHTML="Seems like the above name is not appropirate";
   }
   else{
     document.getElementById("name_cu").className = document.getElementById("name_cu").className.replace(" has-error", "");
@@ -29,43 +29,26 @@ function validateContactForm(){
     document.getElementById("email_cu").className = document.getElementById("email_cu").className + " has-error";
     flag=0;
     document.getElementById("p_email_cu").style.display="block";
-    document.getElementById("p_email_cu").innerHTML="Please enter your email id";
+    document.getElementById("p_email_cu").innerHTML="Please enter your email id. Don't worry, We don't spam";
   }
   else if(/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/.test(x) == false){
     document.getElementById("email_cu").className = document.getElementById("email_cu").className + " has-error";
     flag=0;
     document.getElementById("p_email_cu").style.display="block";
-    document.getElementById("p_email_cu").innerHTML="Please enter valid email id";
+    document.getElementById("p_email_cu").innerHTML="Looks like something is wrong with the above mail id";
   }
   else{
     document.getElementById("email_cu").className = document.getElementById("email_cu").className.replace(" has-error", "");
     document.getElementById("p_email_cu").style.display="none";
   }
 
-  var x=document.forms["contact"]["phone_no_cu"].value;
-  if (x==null || x==""){
-    document.getElementById("phone_no_cu").className = document.getElementById("phone_no_cu").className + " has-error";
-    flag=0;
-    document.getElementById("p_phone_no_cu").style.display="block";
-    document.getElementById("p_phone_no_cu").innerHTML="Please enter your phone number";
-  }
-  else if(/^\d+$/.test(x) == false){
-    document.getElementById("phone_no_cu").className = document.getElementById("phone_no_cu").className + " has-error";
-    flag=0;
-    document.getElementById("p_phone_no_cu").style.display="block";
-    document.getElementById("p_phone_no_cu").innerHTML="Please enter valid phone number";
-  }
-  else{
-    document.getElementById("phone_no_cu").className = document.getElementById("phone_no_cu").className.replace(" has-error", "");
-    document.getElementById("p_phone_no_cu").style.display="none";
-  }
   
   var x=document.forms["contact"]["country_cu"].value;
   if (x==null || x==""){
     document.getElementById("country_cu").className = document.getElementById("country_cu").className + " has-error";
     flag=0;
     document.getElementById("p_country_cu").style.display="block";
-    document.getElementById("p_country_cu").innerHTML="Please provide your country name";
+    document.getElementById("p_country_cu").innerHTML="Your country name please";
   }
   else{
     document.getElementById("country_cu").className = document.getElementById("country_cu").className.replace(" has-error", "");
@@ -76,7 +59,7 @@ function validateContactForm(){
   if (x==null || x==""){
     document.getElementById("city_cu").className = document.getElementById("city_cu").className + " has-error";
     document.getElementById("p_city_cu").style.display="block";
-    document.getElementById("p_city_cu").innerHTML="Please provide your city name";
+    document.getElementById("p_city_cu").innerHTML="Your city name please";
     flag=0;
   }
   else{
@@ -88,7 +71,7 @@ function validateContactForm(){
   if (x==null || x==""){
     document.getElementById("message_cu").className = document.getElementById("message_cu").className + " has-error";
     document.getElementById("p_message_cu").style.display="block";
-    document.getElementById("p_message_cu").innerHTML="Please provide your message";
+    document.getElementById("p_message_cu").innerHTML="Hi, you forgot to write your message";
     flag=0;
   }
   else{
@@ -111,13 +94,13 @@ function validateGetstartedForm(){
     document.getElementById("name_gs").className = document.getElementById("name_gs").className + " has-error";
     flag=0;
     document.getElementById("p_name_gs").style.display="block";
-    document.getElementById("p_name_gs").innerHTML="Please provide your name";
+    document.getElementById("p_name_gs").innerHTML="Your good name please";
   }
   else if (x.length<2){
     document.getElementById("name_gs").className = document.getElementById("name_gs").className + " has-error";
     flag=0;
     document.getElementById("p_name_gs").style.display="block";
-    document.getElementById("p_name_gs").innerHTML="Seems like your name is not appropirate";
+    document.getElementById("p_name_gs").innerHTML="Seems like the above name is not appropirate";
   }
   else{
     document.getElementById("name_gs").className = document.getElementById("name_gs").className.replace(" has-error", "");
@@ -129,7 +112,7 @@ function validateGetstartedForm(){
     document.getElementById("emailid_gs").className = document.getElementById("emailid_gs").className + " has-error";
     flag=0;
     document.getElementById("p_email_gs").style.display="block";
-    document.getElementById("p_email_gs").innerHTML="Please enter your email id";
+    document.getElementById("p_email_gs").innerHTML="Please enter your email id. We don't spam. Not at all";
   }
   else if(/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/.test(x) == false){
     document.getElementById("emailid_gs").className = document.getElementById("emailid_gs").className + " has-error";
@@ -170,7 +153,7 @@ function validateGetstartedForm(){
   if (x==null || x==""){
     document.getElementById("web_gs").className = document.getElementById("web_gs").className + " has-error";
     document.getElementById("p_web_gs").style.display="block";
-    document.getElementById("p_web_gs").innerHTML="Please provide your website";
+    document.getElementById("p_web_gs").innerHTML="We would love to know more about you and your organization.";
     flag=0;
   }
   else{
@@ -182,7 +165,7 @@ function validateGetstartedForm(){
   if (x==null || x==""){
     document.getElementById("how_gs").className = document.getElementById("how_gs").className + " has-error";
     document.getElementById("p_how_gs").style.display="block";
-    document.getElementById("p_how_gs").innerHTML="Please provide your message";
+    document.getElementById("p_how_gs").innerHTML="It is good to know how you know us. Please provide the source";
     flag=0;
   }
   else{

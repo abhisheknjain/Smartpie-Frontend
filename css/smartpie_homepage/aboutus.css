@@ -1,7 +1,7 @@
 .about-content{
 	background-color:#43B2EE;
 	border-color: #000000;
-	border-width: 0px 0px 2px 0px;
+	border-width: 0px 0px 1px 0px;
 	border-style: solid;
 	margin-top: -30px;
 	padding: 50px;
@@ -12,12 +12,12 @@
 
 .about-content > p{
 	font-size: 20px;
-	line-height: 40px;
+	line-height: 30px;
 }
 
 .hiw-content{
 	border-color: #000000;
-	border-width: 0px 0px 2px 0px;
+	border-width: 0px 0px 1px 0px;
 	border-style: solid;
 	background-color:#EE8A43;
 	padding: 50px;
@@ -29,7 +29,7 @@
 
 .team-body{
 	border-color: #000000;
-	border-width: 0px 0px 2px 0px;
+	border-width: 0px 0px 1px 0px;
 	border-style: solid;
 	background-color: #EE434E;
 	padding: 50px;
@@ -81,11 +81,11 @@
 
 
 .get-started-content{
-	background-color:#43EE93;
+	background-color:#43EEB5;
 	padding-left: 5%;
 	padding-right: 5%;
 	border-color: #000000;
-	border-width: 0px 0px 2px 0px;
+	border-width: 0px 0px 1px 0px;
 	border-style: solid;
 	padding: 50px;
 }
@@ -94,24 +94,24 @@
 	margin-bottom: 30px;
 }
 .get-started-info{
-	font-size: 30px;
+	font-size: 20px;
 	display: inline-block;
-	width: 60%;
+	width: 50%;
 }
+
 
 .get-started-form{
 	width: 40%;
 	display: inline-block;
-	margin-left: 60%;
-	margin-top: -50px;
+	margin-left: 8%;
 }
 
 .contactus-content{
-	background-color:#EED443;
+	background-color:#EEB843;
 	padding-left: 5%;
 	padding-right: 5%;
 	border-color: #000000;
-	border-width: 0px 0px 2px 0px;
+	border-width: 0px 0px 1px 0px;
 	border-style: solid;
 	padding: 50px;
 }
