@@ -9,11 +9,12 @@
 	$body = $body."How I got to know about smartpie  ".$_POST['how_gs']."\n\n";
 	$message = $_POST['message_cu'];
 	$body = $body.$message;
-    $subject = "Smartpie Get Started | ".$_POST['org_gs'] "|".$_POST['name_gs'];
+    $subject = "Smartpie Contact Us | ".$_POST['org_gs'];
+    $subject = $subject."| ".$_POST['name_gs'];
     $headers = "From: ".$_POST['email_gs'];
     if (mail($to, $subject, $body, $headers)) {
         echo "<script>alert('Thank you!! We will get back to you soon.')</script>";
-	echo "<script>location.href='Contactus.html'</script>";
+	echo "<script>location.href='aboutus.html#getstarted'</script>";
     } else {
     	echo "<script>alert('Failed due to some technical issue. Please try again!')";
     }

@@ -12,7 +12,7 @@
     $headers = "From: ".$_POST['email_cu'];
     if (mail($to, $subject, $body, $headers)) {
         echo "<script>alert('Thank you!! We will contact you soon.')</script>";
-	echo "<script>location.href='Contactus.html'</script>";
+	echo "<script>location.href='aboutus.html#contactus'</script>";
     } else {
     	echo "<script>alert('Failed due to some technical issue. Please try again!')";
     }
